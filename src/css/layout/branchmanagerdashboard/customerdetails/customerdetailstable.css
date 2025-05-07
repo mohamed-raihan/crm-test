@@ -1,0 +1,32 @@
+.custom-tabs {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .custom-tabs .nav-item .nav-link {
+    color: #333; /* Dark gray text */
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .custom-tabs .nav-item .nav-link:hover {
+    background-color: #b7b9bc; 
+    color: white;
+  }
+  
+  .custom-tabs .nav-item .nav-link.active {
+    background-color:  #717c88; /* Blue active tab */
+    color: white;
+    border: none;
+  }
+  
+  .custom-tab {
+    background-color: white; /* White content area */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  

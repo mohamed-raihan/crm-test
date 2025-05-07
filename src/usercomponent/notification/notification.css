@@ -1,0 +1,92 @@
+/* Full-screen Layout */
+.notification-container {
+  padding: 1.5rem;
+  background-color: #f9fafb;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Header Section */
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.notification-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+/* Search Bar */
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  background-color: white;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  margin-left: 0.5rem;
+}
+
+/* Buttons */
+.header-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.add-message-btn {
+  background-color: #111827 !important;
+  color: white !important;
+}
+
+/* Notifications Table */
+.message-list {
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.message-list-header {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr 1fr 1fr;
+  font-weight: bold;
+  padding: 1rem;
+  background: #f3f4f6;
+}
+
+.message-item {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr 1fr 1fr;
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.message-item:hover {
+  background: #f9fafb;
+}
+
+.recipient {
+  color: #6b7280;
+}
+
+.status-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+}
+
+.unread { background-color: #fef3c7; color: #92400e; }
+.read { background-color: #d1fae5; color: #065f46; }

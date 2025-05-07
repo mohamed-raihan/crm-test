@@ -1,0 +1,140 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    padding: 20px 0;
+    background-color: #f8f9fa; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, width 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .sidebar.closed {
+    transform: translateX(-100%);
+  }
+  
+  .sidebar-menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 50px;
+  }
+  
+  .sidebar-item {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    border-radius: 7px;
+    
+  }
+  
+  .sidebar-item a {
+    color: #333; 
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .sidebar-item:hover {
+    background-color: #eceef1; /* Subtle hover effect */
+    color: #007bff; /* Highlight text with a blue tint on hover */
+  }
+  
+  .sidebar-item p:hover {
+    background-color: #eceef1; /* Subtle hover effect */
+    color: #007bff; /* Highlight text with a blue tint on hover */
+  }
+  
+  
+  .sidebar-footer {
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+    width: 100%;
+    text-align: start;
+    margin: 10px;
+  }
+  
+  .account-settings {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .account-settings:hover {
+    background-color: #eceef1; 
+    color: #007bff; 
+  }
+  
+  .sidebar-toggle {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1100;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: none;
+  }
+  
+  
+  
+  .sidebar-toggle i {
+    font-size: 18px;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 200px;
+    }
+  
+    .sidebar-menu {
+      margin-top: 20px;
+    }
+  
+    .sidebar-item a {
+      font-size: 16px;
+      padding: 10px 15px;
+    }
+  
+    .sidebar-toggle{
+      display:block;
+    }
+  
+    .account-settings {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .sidebar-footer {
+      bottom: 100px; 
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .sidebar {
+      width: 180px; 
+    }
+  
+    .sidebar-item a {
+      font-size: 14px;
+      padding: 8px 10px;
+    }
+  
+    .sidebar-footer {
+      bottom: 80px; 
+    }
+  }
+  

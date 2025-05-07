@@ -1,0 +1,23 @@
+.policy-details {
+    margin-top: 20px;
+  }
+  
+  .policy-details-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .policy-detail-box {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .policy-detail-box {
+      width: 100%;
+    }
+  }
+  

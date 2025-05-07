@@ -1,0 +1,164 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 97px;
+    /* overflow-x: hidden; */
+    /* background-color: blue; */
+    position: fixed; /* Change from sticky to static */
+    width:100% ;
+    z-index: 1;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-logo {
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+  
+  .profile-name {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .profile-subtext {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .logout-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .logout-button:hover {
+    background-color: #d32f2f;
+  }
+  .alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Ensure it spans the full viewport width */
+    height: 100vh; /* Ensure it spans the full viewport height */
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .alert-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+  }
+  
+  .alert-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between; /* Adds space between the buttons */
+    gap: 10px; /* Adds an additional gap between the buttons */
+  }
+  
+  .confirm-button,
+  .cancel-button {
+    flex: 1; /* Make buttons equally sized */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .confirm-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .confirm-button:hover {
+    background-color: #45a049;
+  }
+  
+  .cancel-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .cancel-button:hover {
+    background-color: #d32f2f;
+  }
+  
+ 
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .header-left,
+    .header-right {
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  
+    .header-right{
+      position: relative;
+      left: 150px;
+      bottom: 50px;
+    }
+    .profile-info {
+      display: none; 
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .header-right{
+      position: relative;
+      left: 270px;
+     
+    }
+  
+  }
+  

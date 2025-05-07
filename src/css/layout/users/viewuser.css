@@ -1,0 +1,78 @@
+.viewbranch-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .branch-header {
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-initial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+
+  }
+  
+  .user-details h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .user-details p {
+    margin: 0;
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .icon-close {
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  .branch-info-section {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important; /* Three columns for the first row */
+    gap: 20px !important; /* Spacing between items */
+    margin-top: 20px !important;
+    /* background-color: red !important; */
+  }
+  
+  .info-column h6 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    width: 200px;
+  }
+  
+  .info-column p {
+    font-size: 14px;
+    color: #555;
+    width: 150px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .branch-info-section {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .branch-info-section {
+      grid-template-columns: 1fr; /* Single column for very small screens */
+    }
+  }
+  

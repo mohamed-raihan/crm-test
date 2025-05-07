@@ -1,0 +1,65 @@
+.account-settings-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .account-settings-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .account-settings-subtitle {
+    color: #6b7280;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .settings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .setting-details {
+    flex: 1;
+  }
+  
+  .setting-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .setting-description {
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
+  
+  .setting-action {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .setting-info {
+    font-size: 0.9rem;
+    color: #6b7280;
+  }
+  
+  .change-btn {
+    font-weight: 500;
+    text-decoration: none;
+  }
+  

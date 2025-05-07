@@ -1,0 +1,146 @@
+/* Main Reports Page Styles */
+.reports-page {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+  }
+  
+  .reports-container {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+  }
+  
+  .filter-field {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .filter-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 50px;
+    width: 150px;
+    margin-top: 30px;
+  }
+  
+  .filter-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .reports-table {
+    margin-top: 20px;
+  }
+  
+  .sort-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .sort-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  @media (max-width: 768px) {
+    .reports-container {
+      padding: 20px;
+    }
+  
+    .page-title {
+      font-size: 1.5rem;
+    }
+  
+    .filter-group {
+      width: 100%;
+      margin: 5px;
+    }
+  
+    .filter-btn, .sort-btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+
+    .filter-btn{
+        margin-top: 35px;
+    }
+  
+    table th, table td {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .reports-container {
+      padding: 15px;
+    }
+  
+    .page-title {
+      font-size: 1.3rem;
+    }
+  
+    table th, table td {
+      font-size: 0.85rem;
+      padding: 8px;
+    }
+  }
+  
