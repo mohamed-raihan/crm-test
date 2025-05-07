@@ -19,10 +19,11 @@ import { toast } from "react-toastify";
 import { Field } from "formik";
 import "react-form-wizard-component/dist/style.css";  
 import EditCustomerDetailsForm from "./Editcustomersection";
-import EditNomineeDetailsForm from "./EditNomineesection";
+// import EditNomineeDetailsForm from "./EditNomineesection";
 import EditPaymentDetailsForm from "./Editpaymentsection";
 import EditPolicyDetailsForm from "./Editpolicysection";
 import FormWizard from "react-form-wizard-component";
+import NomineeDetailsForm from "./Editnomineesection";
 
 const EdituserModal = ({ toggle, userData, onUserUpdated }) => {
   const [formData, setFormData] = useState({
@@ -1061,7 +1062,7 @@ console.log(CustomerdetailFormData.customer_id);
       />
     </FormWizard.TabContent>
     <FormWizard.TabContent title="Nominee Details" icon="ti-heart">
-      <EditNomineeDetailsForm
+      <NomineeDetailsForm
         formData={nomineeFormData}
         setFormData={setNomineeFormData}
         handleChange={handleNomineeInputChange}
